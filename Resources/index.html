@@ -5,18 +5,52 @@
 			import hello
 		</script>
 		<script type="text/python">
-			def hello2():
-			    return "hello2() in index.html"
+			def hello2(): return "hello2() in index.html"
 		</script>
 	</head>
-	<body style="background-color:#1c1c1c;margin:0">
-		<div style="border-top:1px solid #404040">
-			<div style="color:#fff;;padding:10px">
-				Welcome to Titanium
-			</div>
-			<input type="button" onclick="alert(hello.hello());" value="call hello() in hello.py"/>
-			<input type="button" onclick="alert(hello2());" value="call hello2() in index.html"/>
-		</div>
-		<div id="aaaaa"></div>
+	<body>
+		<script type="text/javascript">
+			function call_external_python_function() {
+				var element = document.getElementById("external");
+				element.innerHTML = hello.hello();
+			}
+		</script>
+		<p>
+			Case 1: Python hello() function in hello.py
+			was imported with &lt;script&gt; tag in this html file.
+			JavaScript can invoke it and
+			the result will be returned to JavaScript and
+			will be embedded below.
+		</p>
+		<table border="1px">
+			<tr>
+				<td>
+				<input type="button" onclick="call_external_python_function();" value="call hello() in hello.py"/>
+				</td>
+			</tr>
+			<tr>
+				<td id="external">The returned value will be displayed here</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			function call_internal_python_function() {
+				var element = document.getElementById("internal");
+				element.innerHTML = hello2();
+			}
+		</script>
+		<p>
+			Case 2: Python hello2() function in &lt;script&gt; tag in this html file
+			will be invoked via JavaScript and the result will be embedded below.
+		</p>
+		<table border="1px">
+			<tr>
+				<td>
+				<input type="button" onclick="call_internal_python_function();" value="call hello2() in index.html"/>
+				</td>
+			</tr>
+			<tr>
+				<td id="internal">The returned value will be displayed here</td>
+			</tr>
+		</table>
 	</body>
 </html>
