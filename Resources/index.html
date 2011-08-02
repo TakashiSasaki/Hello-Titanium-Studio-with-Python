@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>hello titanium</title>
+		<script type="text/python">
+			import hello
+		</script>
+		<script type="text/python">
+			def hello2():
+			    return "hello2() in index.html"
+		</script>
+	</head>
+	<body style="background-color:#1c1c1c;margin:0">
+		<div style="border-top:1px solid #404040">
+			<div style="color:#fff;;padding:10px">
+				Welcome to Titanium
+			</div>
+			<input type="button" onclick="alert(hello.hello());" value="call hello() in hello.py"/>
+			<input type="button" onclick="alert(hello2());" value="call hello2() in index.html"/>
+		</div>
+		<div id="aaaaa"></div>
+	</body>
+</html>
