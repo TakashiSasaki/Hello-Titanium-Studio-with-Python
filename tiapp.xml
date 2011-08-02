@@ -2,14 +2,14 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <guid>e051199a-b08b-409f-b46e-cc6f7a48e101</guid>
     <!-- These values are edited/maintained by Titanium Developer -->
-    <id>com.gmail.takashi316.HelloTitanium</id>
+    <id>com.gmail.takashi316.TitaniumStudioPython</id>
     <name>HelloTitanium</name>
-    <version>1.0</version>
-    <publisher>sasaki</publisher>
+    <version>1.0.0</version>
+    <publisher>Takashi SASAKI</publisher>
     <url>http://twitter.com/TakashiSasaki</url>
-    <description>not specified</description>
+    <description>This application is a sample for developing desktop application by Python on Titanium Studio.</description>
     <icon>default_app_logo.png</icon>
-    <copyright>2011 by sasaki</copyright>
+    <copyright>2011 by Takashi SASAKI</copyright>
     <!-- Window Definition - these values can be edited -->
     <window>
         <id>initial</id>
