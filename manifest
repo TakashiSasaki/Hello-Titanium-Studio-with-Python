@@ -2,8 +2,8 @@
 #publisher:Takashi SASAKI
 #url:http://twitter.com/TakashiSasaki
 #image:default_app_logo.png
-#appid:com.gmail.takashi316.TitaniumStudioPython
-#desc:This application is a sample for developing desktop application by Python on Titanium Studio.
+#appid:cx.windy.takashi.HelloTitaniumStudioWithPython
+#desc:This application is a sample for developing desktop application with Python on Titanium Studio.
 #type:desktop
 #guid:e051199a-b08b-409f-b46e-cc6f7a48e101
 runtime:1.1.0
